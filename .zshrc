@@ -46,7 +46,7 @@ ZSH_THEME="local-sunrise"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(gitfast python fasd sudo pip extract svn)
-plugins=(z python ipython gitfast sudo pip extract docker node fabric virtualenvwrapper ubuntu apt)
+plugins=(z python ipython gitfast sudo pip extract docker docker-compose node fabric)
 
 source $ZSH/oh-my-zsh.sh
 

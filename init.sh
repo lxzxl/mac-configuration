@@ -15,6 +15,23 @@ mv ./.zshrc ~/.zshrc
 # shadoowsoocks(wrong spelling for safe)
 ## download from https://github.com/shadowsocks/ShadowsocksX-NG/releases/
 
+# node: https://github.com/tj/n
+curl -L https://git.io/n-install | bash
+## auto compeletion
+npm completion >> ~/.zshrc
+
+# pyenv
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+brew install pyenv-virtualenv
+## change global to 3.6.1
+pyenv install 3.6.1
+pyenv global 3.6.1
+## pyenv-wrapper
+git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
+pyenv virtualenvwrapper
+
+
+
 # iTerm2 设置
 
 # chrome-canary
@@ -22,3 +39,6 @@ brew install caskroom/versions/google-chrome-canary
 
 # QBlocker
 brew install caskroom/cask/qblocker
+
+# typora
+brew install caskroom/cask/typora
