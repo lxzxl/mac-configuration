@@ -13,9 +13,9 @@ RESET=$reset_color
 
 function prompt_user {
     if [ "$USER" = "root" ]; then
-        echo -e "%{$R%}\u26A0";
+        echo -e "%{$R%}🙈";
     else
-        echo -e "%{$M%}\u263A";
+        echo -e "%{$M%}🐶";
     fi
 }
 
