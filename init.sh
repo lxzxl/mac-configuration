@@ -23,9 +23,11 @@ npm completion >> ~/.zshrc
 # pyenv
 curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 brew install pyenv-virtualenv
-## change global to 3.6.1
-pyenv install 3.6.1
-pyenv global 3.6.1
+CFLAGS="-I$(brew --prefix openssl)/include" \
+LDFLAGS="-L$(brew --prefix openssl)/lib" \
+pyenv install -v 3.6.2
+## change global to 3.6.2
+pyenv global 3.6.2
 ## pyenv-wrapper
 git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 pyenv virtualenvwrapper
