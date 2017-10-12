@@ -21,8 +21,14 @@ curl -L https://git.io/n-install | bash
 npm completion >> ~/.zshrc
 
 # pyenv
-curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+brew install pyenv
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+
 brew install pyenv-virtualenv
+# add below to zshrc
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+pyenv virtualenvwrapper_lazy
+
 CFLAGS="-I$(brew --prefix openssl)/include" \
 LDFLAGS="-L$(brew --prefix openssl)/lib" \
 pyenv install -v 3.6.2
