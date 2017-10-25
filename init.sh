@@ -9,7 +9,7 @@ brew install zsh
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # configure oh-mu-zsh
-mv ./.oh-my-zsh/themes/local-sunrise.zsh-theme ~/.oh-my-zsh/themes/
+mv ./.oh-my-zsh/themes/local-*.zsh-theme ~/.oh-my-zsh/themes/
 mv ./.zshrc ~/.zshrc
 
 # shadoowsoocks(wrong spelling for safe)
